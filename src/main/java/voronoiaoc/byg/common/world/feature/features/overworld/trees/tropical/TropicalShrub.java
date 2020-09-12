@@ -72,9 +72,7 @@ public class TropicalShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
 
                     //Sets Logs
-                    if (isAir(worldIn, blockpos1)) {
                         this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
-                    }
                 }
                 //This allows a random rotation between 3 differently leave Presets in the same class. Optimizes Performance instead of the loading of several classes.
                 int leavePreset = rand.nextInt(1) + 1;

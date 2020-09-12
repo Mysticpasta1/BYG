@@ -71,9 +71,7 @@ public class SmallYellowTaigaTree extends BYGAbstractTreeFeature<NoFeatureConfig
                     int logplacer = posY + groundUpLogRemover;
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
 
-                    if (isAir(worldIn, blockpos1)) {
                         this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
-                    }
                 }
                 int leaveColor = rand.nextInt(2) + 1;
 

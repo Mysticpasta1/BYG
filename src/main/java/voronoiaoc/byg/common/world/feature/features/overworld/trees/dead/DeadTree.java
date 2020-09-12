@@ -76,13 +76,10 @@ public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
 
                     //Sets Logs
-                    if (isAir(worldIn, blockpos1)) {
                         this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
                         this.treelog(treeBlockSet, worldIn, blockpos2.west(), boundsIn);
                         this.treelog(treeBlockSet, worldIn, blockpos2.west().up(), boundsIn);
 
-
-                    }
                 }
                 {
                     int leavessquarespos = rand.nextInt(1) + 1;

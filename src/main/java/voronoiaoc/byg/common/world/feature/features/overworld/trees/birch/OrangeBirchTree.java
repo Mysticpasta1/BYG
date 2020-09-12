@@ -72,11 +72,7 @@ public class OrangeBirchTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                     int logplacer = posY + groundUpLogRemover;
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
 
-                    //Sets Logs
-                    if (isAir(worldIn, blockpos1)) {
-                        this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
-
-                    }
+                 this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
                 }
                 //This allows a random rotation between 3 differently leave Presets in the same class. Optimizes Performance instead of the loading of several classes.
                 int leavePreset = rand.nextInt(4) + 1;

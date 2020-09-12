@@ -83,7 +83,6 @@ public class OrangeDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig>
                     BlockPos blockpossouth1 = new BlockPos(posX1, logplacer2, posZ1 + 1);
                     //BlockPos blockpos7 = new BlockPos(posX1 - 1, logplacer2, posZ1 );
 
-                    if (isAir(worldIn, blockpos1)) {
                         this.treelog(treeBlockSet, worldIn, blockpos1, boundsIn);
                         //this.treelog(treeBlockSet, worldIn, blockpos1.east(), boundsIn);
                         // this.treelog(treeBlockSet, worldIn, blockpos1.south(), boundsIn);
@@ -93,9 +92,7 @@ public class OrangeDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig>
                         //this.treelog(treeBlockSet, worldIn, blockposnorth1.north(), boundsIn);
                         // this.treelog(treeBlockSet, worldIn, blockpossouth1.south(), boundsIn);
                         //  this.treelog(treeBlockSet, worldIn, blockposeast1.east(), boundsIn);
-                        // this.treelog(treeBlockSet, worldIn, blockposwest1.west(), boundsIn);
-
-                    }
+                        // this.treelog(treeBlockSet, worldIn, blockposwest1.west(), boundsIn)
                 }
                 int leavesetting = rand.nextInt(3) + 1;
                 {
